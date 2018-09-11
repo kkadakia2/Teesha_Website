@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en-US">
+<!-- fix map -->
+<style>
+ html, body {
+                height: 100%;
+                overflow: hidden;
+            }
+</style>
+<head>
+
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<meta name="author" content="SemiColonWeb" />
+
+	<!-- Stylesheets
+	============================================= -->
+	<link href="http://fonts.googleapis.com/css?family=Lato:300,400,400italic,600,700|Raleway:300,400,500,600,700|Crete+Round:400italic" rel="stylesheet" type="text/css" />
+	<link rel="stylesheet" href="css/bootstrap.css" type="text/css" />
+	<link rel="stylesheet" href="style.css" type="text/css" />
+	<link rel="stylesheet" href="css/dark.css" type="text/css" />
+	<link rel="stylesheet" href="css/font-icons.css" type="text/css" />
+	<link rel="stylesheet" href="css/animate.css" type="text/css" />
+	<link rel="stylesheet" href="css/magnific-popup.css" type="text/css" />
+
+	<link rel="stylesheet" href="css/responsive.css" type="text/css" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+
+	<!-- Document Title
+	============================================= -->
+	<title>T&H - Wedding | Location</title>
+
+</head>
+
+<body class="stretched">
+
+	<!-- Document Wrapper
+	============================================= -->
+	<div id="wrapper" class="clearfix">
+
+		<div id="most-toppest"></div>
+		<!-- Header
+		============================================= -->
+		<header id="header">
+
+			<div id="header-wrap">
+
+				<div class="container clearfix">
+
+					<div id="primary-menu-trigger"><i class="icon-reorder"></i></div>
+
+					<div id="logo"></div>
+
+					<!-- Primary Navigation
+					============================================= -->
+					<nav id="primary-menu" class="style-2 center">
+
+						<ul class="one-page-menu">
+							<li><a href="index.html" data-href="#most-toppest"><div>Home</div></a></li>
+							<li><a href="couple.html" data-href="#section-couple"><div>Couple</div></a></li>
+							<li><a href="family.html" data-href="#section-couple"><div>Family</div></a></li>
+							<li><a href="gallery.html" data-href="#section-gallery"><div>Gallery</div></a></li>
+							<li><a href="events.html" data-href="#section-events"><div>Events Schedule</div></a></li>
+							<li><a href="locations.html" data-href="#section-locations"><div>Locations</div></a></li>
+							<li><a href="rsvp.html" data-href="#section-rsvp"><div>RSVP</div></a></li>
+						</ul>
+
+					</nav><!-- #primary-menu end -->
+
+
+					<div id="section-locations" class="heading-block title-center topmargin-lg page-section">
+						<h2>Locations</h2>
+						<span>Ashirwad Palace
+						<p style="font-size:75%;"> 169 S Salem St, Randolph, NJ 07869 </p>
+						<span>Hanover Marriott
+						<p style="font-size:75%;"> 1401 NJ-10, Whippany, NJ 07981 </p>
+						</span>
+					</div>
+
+				</div>
+				<div id="google-map1" style="height: 500px;" class="gmap"> </br></br></br> </div> </br></br></br>
+
+				</div>
+
+			</div>
+
+		</header><!-- #header end -->
+</br></br></br>
+
+
+
+	<!-- External JavaScripts
+	============================================= -->
+	<script type="text/javascript" src="js/jquery.js"></script>
+	<script type="text/javascript" src="js/plugins.js"></script>
+
+	<!-- Footer Scripts
+	============================================= -->
+	<script type="text/javascript" src="js/functions.js"></script>
+
+	<script type="text/javascript" src="https://maps.google.com/maps/api/js?key=AIzaSyDMxJ92oBkSnVNHFX3R8XhtYQPEgk1_IiI"></script>
+	<script type="text/javascript" src="js/jquery.gmap.js"></script>
+
+	<script type="text/javascript">
+		jQuery(document).ready( function($){
+			var newDate = new Date(2017, 2, 31);
+			$('#countdown-ex1').countdown({until: newDate});
+		});
+		jQuery(window).load(function(){
+			var t=setTimeout(function(){
+				$( '.flexslider .slide' ).resize();
+			},500);
+		});
+
+
+		$('#google-map1').gMap({
+			address: 'Randolph, NJ',
+			maptype: 'ROADMAP',
+			zoom: 11,
+			markers: [
+				{
+					address: '169 S Salem St, Randolph, NJ 07869',
+					html: 'Ashirwad Palace - Engagemnt Ceremony'
+				},
+				{
+					address: '1401 NJ-10, Whippany, NJ 07981',
+					html: 'Hanover Marriott'
+				},
+				{
+
+				}
+			],
+			doubleclickzoom: false,
+			controls: {
+				panControl: false,
+				zoomControl: true,
+				mapTypeControl: false,
+				scaleControl: false,
+				streetViewControl: false,
+				overviewMapControl: false
+			}
+		});
+
+	</script>
+
+</body>
+</html>

@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en-US">
+<script>
+	var audio = document.getElementById('background_audio');
+
+	document.getElementById('mute').addEventListener('click', function (e)
+	{
+		e = e || window.event;
+		audio.muted = !audio.muted;
+		e.preventDefault();
+	}, false);
+</script>
+<head>
+
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<meta name="author" content="SemiColonWeb" />
+
+	<!-- Stylesheets
+	============================================= -->
+	<link href="http://fonts.googleapis.com/css?family=Lato:300,400,400italic,600,700|Raleway:300,400,500,600,700|Crete+Round:400italic" rel="stylesheet" type="text/css" />
+	<link rel="stylesheet" href="css/bootstrap.css" type="text/css" />
+	<link rel="stylesheet" href="style.css" type="text/css" />
+	<link rel="stylesheet" href="css/dark.css" type="text/css" />
+	<link rel="stylesheet" href="css/font-icons.css" type="text/css" />
+	<link rel="stylesheet" href="css/animate.css" type="text/css" />
+	<link rel="stylesheet" href="css/magnific-popup.css" type="text/css" />
+
+	<link rel="stylesheet" href="css/responsive.css" type="text/css" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+
+	<!-- Document Title
+	============================================= -->
+	<title>T&H - Wedding | Home</title>
+
+</head>
+
+<body class="stretched">
+
+	<!-- Document Wrapper
+	============================================= -->
+	<div id="wrapper" class="clearfix">
+
+		<div id="most-toppest"></div>
+		<!-- Header
+		============================================= -->
+		<header id="header">
+
+			<div id="header-wrap">
+
+				<div class="container clearfix">
+
+					<div id="primary-menu-trigger"><i class="icon-reorder"></i></div>
+
+					<div id="logo"></div>
+
+					<!-- Primary Navigation
+					============================================= -->
+					<nav id="primary-menu" class="style-2 center">
+
+						<ul class="one-page-menu">
+							<li><a href="https://teeshaandhet.com/" data-href="#most-toppest"><div>Home</div></a></li>
+							<li><a href="couple.html" data-href="#section-couple"><div>Couple</div></a></li>
+							<li><a href="family.html" data-href="#section-couple"><div>Family</div></a></li>
+							<li><a href="gallery.html" data-href="#section-gallery"><div>Gallery</div></a></li>
+							<li><a href="events.html" data-href="#section-events"><div>Events Schedule</div></a></li>
+							<li><a href="locations.html" data-href="#section-locations"><div>Locations</div></a></li>
+							<li><a href="rsvp.html" data-href="#section-rsvp"><div>RSVP</div></a></li>
+						</ul>
+
+					</nav><!-- #primary-menu end -->
+
+				</div>
+
+			</div>
+			<!-- PLays Music when the website opens -->
+			<audio controls autoplay id="background_audio">
+			<source src="images/team/Mere Rashke Qamar By Atif Aslam Hindi Music Video 2017 HD.mp3" type="audio/mpeg">
+				Your browser does not support the audio element.
+			</audio>
+			<!-- End of Music PLaying Code -->
+		</header><!-- #header end -->
+		<section id="slider" class="slider-parallax full-screen page-section dark clearfix">
+
+			<div class="slider-parallax-inner">
+
+				<div class="fslider" data-speed="2000" data-pause="6000" data-animation="fade" data-arrows="false" data-pagi="false" style="position: absolute; width: 100%; height: 100%; top: 0; left: 0; background-color: #333;">
+					<div class="flexslider" style="height: 100% !important;">
+						<div class="slider-wrap" style="height: inherit;">
+							<div class="slide" style="background: url('our_images/home1.jpg') center center; background-size: cover; height: 100% !important;"></div>
+							<div class="slide" style="background: url('our_images/home2.jpg') center center; background-size: cover; height: 100% !important;"></div>
+							<div class="slide" style="background: url('our_images/home3.jpg') center center; background-size: cover; height: 100% !important;"></div>
+						</div>
+					</div>
+				</div>
+				<div class="container vertical-middle dark center clearfix" style="z-index: 2;" >
+
+					<div class="wedding-head clearfix" style= "float:left; color:yellow; " >
+						<div class="first-name">Het<span>Patel</span></div>
+						<div class="and">&amp;</div>
+						<div class="last-name">Teesha<span>Parikh</span></div>
+					</div>
+
+					<div class="divider divider-short divider-left" ></div>
+				<!-- 	<p class="lead" style="float:left;">Getting <strong>Hitched</strong> on:</p>-->
+					<div id="countdown-ex1" class="countdown countdown-large coming-soon divleft" style="max-width:650px;position:relative; color:yellow;"></div>
+				<!-- embeded video -->
+
+			<a href="#myModal1" data-lightbox="inline" id="mute" class="fleft button button-border button-rounded button-green" style="width:600px;">Engagement videos</a>
+				</div>
+				<!-- embeded video -->
+				<div class="modal1 mfp-hide" id="myModal1">
+						<div class="block divcenter" style="background-color: #FFF; max-width: 600px;">
+							<div class="center clearfix" style="padding: 50px;">
+								<h3 class="uppercase">Pre-Engagement Videos!</h3>
+								<iframe src="https://www.youtube.com/embed/KesqTjYsalc" width="500" height="210" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+								<div class="line"></div>
+								<iframe src="https://www.youtube.com/embed/UrLL4MSLEi0" width="500" height="210" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+								<p class="lead nobottommargin topmargin-sm">Media embedded from YouTube</p>
+							</div>
+						</div>
+					</div>
+			</div>
+					<!-- Modal -->
+
+		</section>
+
+
+
+	<!-- External JavaScripts
+	============================================= -->
+	<script type="text/javascript" src="js/jquery.js"></script>
+	<script type="text/javascript" src="js/plugins.js"></script>
+
+	<!-- Footer Scripts
+	============================================= -->
+	<script type="text/javascript" src="js/functions.js"></script>
+
+	<script type="text/javascript" src="https://maps.google.com/maps/api/js?key=AIzaSyDMxJ92oBkSnVNHFX3R8XhtYQPEgk1_IiI"></script>
+	<script type="text/javascript" src="js/jquery.gmap.js"></script>
+
+	<script type="text/javascript">
+		jQuery(document).ready( function($){
+			var newDate = new Date(2018, 6, 24);
+			$('#countdown-ex1').countdown({until: newDate});
+		});
+		jQuery(window).load(function(){
+			var t=setTimeout(function(){
+				$( '.flexslider .slide' ).resize();
+			},500);
+		});
+
+
+		$('#google-map1').gMap({
+			address: 'Melbourne, Australia',
+			maptype: 'ROADMAP',
+			zoom: 13,
+			markers: [
+				{
+					address: 'Westgate Park, Melbourne, Australia',
+					html: 'Cocktail Party'
+				},
+				{
+					address: 'Crown Casino and Entertainment Complex, Melbourne, Australia',
+					html: 'Wedding Ceremony'
+				},
+				{
+					address: 'Federation Square, Melbourne, Australia',
+					html: 'After Wedding Party'
+				}
+			],
+			doubleclickzoom: false,
+			controls: {
+				panControl: false,
+				zoomControl: true,
+				mapTypeControl: false,
+				scaleControl: false,
+				streetViewControl: false,
+				overviewMapControl: false
+			}
+		});
+
+	</script>
+
+</body>
+</html>
